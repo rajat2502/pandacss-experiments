@@ -22,4 +22,6 @@ export default defineConfig({
   presets: [preset],
 
   jsxFramework: "react",
+
+  importMap: '@headout/token-system'
 });
