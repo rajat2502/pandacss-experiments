@@ -1,0 +1,23 @@
+{
+  "name": "@headout/design-system",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "panda codegen",
+    "watch": "panda --watch"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@pandacss/dev": "^0.37.2"
+  },
+  "dependencies": {
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
