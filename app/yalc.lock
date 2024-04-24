@@ -1,0 +1,13 @@
+{
+  "version": "v1",
+  "packages": {
+    "@headout/design-system": {
+      "signature": "d8cf75d149debe1b51460def156f0fd3",
+      "file": true
+    },
+    "@headout/token-system": {
+      "signature": "51e54ee7eb818831adfd75a6d20c6c88",
+      "file": true
+    }
+  }
+}

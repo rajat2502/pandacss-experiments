@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "prepare": "panda codegen",
-    "watch": "panda --watch"
+    "watch": "panda --watch",
+    "build": "tsup"
   },
   "workspaces": [
     "packages/*"
@@ -16,9 +17,25 @@
     "@types/react": "^18.2.79",
     "@types/react-dom": "^18.2.25",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tsup": "^8.0.2"
   },
   "dependencies": {
     "@headout/token-system": "*"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./atoms": {
+      "types": "./dist/atoms/index.d.ts",
+      "require": "./dist/atoms/index.cjs",
+      "import": "./dist/atoms/index.js"
+    },
+    "./tokens": {
+      "types": "./dist/tokens/index.d.ts",
+      "require": "./dist/tokens/index.cjs",
+      "import": "./dist/tokens/index.js"
+    }
   }
 }

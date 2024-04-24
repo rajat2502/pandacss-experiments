@@ -3,10 +3,10 @@ import React from "react";
 import { css } from "@headout/token-system/css";
 
 type Props = {
-  color: string;
+  color?: string;
 } & React.HTMLProps<HTMLButtonElement>;
 
-const Button = ({ color }: Props) => {
+export const Button = ({ color }: Props) => {
   return (
     <button
       className={css({
