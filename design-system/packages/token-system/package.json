@@ -1,5 +1,5 @@
 {
-  "name": "@headout/token-system",
+  "name": "token-system",
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
