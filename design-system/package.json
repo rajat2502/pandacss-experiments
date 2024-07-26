@@ -7,7 +7,9 @@
   "scripts": {
     "prepare": "panda codegen",
     "watch": "panda --watch",
-    "build": "tsup"
+    "build": "tsup",
+    "studio:dev": "panda studio",
+    "studio:build": "panda studio --build --outdir ./studio"
   },
   "workspaces": [
     "packages/*"
